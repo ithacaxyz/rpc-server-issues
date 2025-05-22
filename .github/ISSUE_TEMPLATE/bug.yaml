@@ -1,0 +1,23 @@
+name: Bug
+description: Report a bug
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please ensure that the bug has not already been reported in the issue tracker.
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: |
+        Please describe the bug in as many details as possible, for example by providing requests and responses.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: RPC Server version
+      description: What RPC version are you interacting with? (`cast rpc wallet_health`)
+  - type: textarea
+    attributes:
+      label: Chain ID
+      description: What chain ID are you interacting with?
